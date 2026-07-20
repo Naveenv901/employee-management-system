@@ -1,0 +1,36 @@
+# Backend
+demo/target/
+demo/.classpath
+demo/.project
+demo/.settings/
+demo/bin/
+*.class
+*.jar
+*.log
+
+# Frontend
+ReactApp/node_modules/
+ReactApp/build/
+ReactApp/.env
+ReactApp/.env.local
+ReactApp/npm-debug.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Credentials
+application-prod.properties
+secrets.properties
