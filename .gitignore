@@ -32,5 +32,6 @@ Thumbs.db
 .env.*.local
 
 # Credentials
+application.properties
 application-prod.properties
 secrets.properties
