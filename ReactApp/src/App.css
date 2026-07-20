@@ -1,0 +1,154 @@
+/*  Page Background */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  /* background: linear-gradient(to right, #4facfe, #00f2fe); */
+  /* background-color: blue */
+}
+
+/*  Center Container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+/* Card */
+.card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/*  Heading */
+.card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form Layout */
+.form-div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Form Group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/*  Labels */
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #444;
+}
+
+/*  Inputs */
+input,
+textarea,
+select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+/*  Input Focus */
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #4facfe;
+  outline: none;
+  box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
+}
+
+/*  Row (2-column layout) */
+.row {
+  display: flex;
+  gap: 15px;
+}
+
+.row .form-group {
+  flex: 1;
+}
+
+/*  Inline group (gender / skills) */
+.inline-group {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* Checkbox / Radio container */
+.gender-select {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Buttons */
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/*  Submit Button */
+.submit-btn{
+  background-color: rgb(16, 117, 16);
+  color: white;
+}
+
+.submit-btn:hover {
+  background-color: rgba(20, 109, 20, 0.747);
+}
+
+/*  Edit Button */
+.update-btn {
+  background-color: #4facfe;
+}
+
+.update-btn:hover {
+  background-color: #3a8ee6;
+}
+
+/*  View Button */
+.view-btn {
+  background-color: #555;
+  color: white;
+  margin-top: 10px;
+}
+
+.view-btn:hover {
+  background-color: #333;
+}
+
+/*  Error Messages */
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+/*  Responsive Design */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .card {
+    padding: 20px;
+  }
+}
