@@ -29,8 +29,7 @@ public class UserService {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
-    @Autowired
-    private MailService emailService;
+
     //---------------------- SAVE USER ----------------------
     public UserEntity saveUser(UserDtos user) {
         
@@ -193,7 +192,6 @@ public class UserService {
 
             if (!pwd.isEmpty()) {
                 user.setPassword(passwordEncoder.encode(pwd));
-                emailService.sendPasswordResetEmail(user.getEmail(), pwd);
             }
         }
         // if (dto.getPassword() != null && !dto.getPassword().isEmpty()) {
